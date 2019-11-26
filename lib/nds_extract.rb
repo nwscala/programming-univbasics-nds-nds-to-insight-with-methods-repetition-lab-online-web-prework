@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require_relative './directors_database'
-require 'pry'
+# require 'pry'
 def directors_totals(source)
   result = {}
   director_index = 0
@@ -9,7 +9,7 @@ def directors_totals(source)
     result[director[:name]] = gross_for_director(director)
     director_index += 1
   end
-  binding.pry
+  # binding.pry
   result
 end
 
