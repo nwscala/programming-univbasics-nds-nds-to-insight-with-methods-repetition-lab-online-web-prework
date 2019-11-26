@@ -26,6 +26,13 @@ end
 
 def list_of_directors(source)
   # Write this implementation
+  name_array = []
+  index = 0 
+  while index < source.size do 
+    name_array.push(source[index][:name])
+    index += 1
+  end
+  name_array
 end
 
 def total_gross(source)
